@@ -20,7 +20,7 @@ python manage.py migrate
 3. To run the API and check if everything was done correctly:
 
 ```
-django-admin manage.py runserver
+python manage.py runserver
 ```
 
 This will start the server in your browser, check
