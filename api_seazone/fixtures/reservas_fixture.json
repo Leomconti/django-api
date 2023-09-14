@@ -40,7 +40,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "c45de10e-67ff-4372-d789-3g04b2c3d482",
+            "codigo": "c45de10e-67ff-4372-d789-3f04b2c3d482",
             "anuncio": 4,
             "data_checkin": "2023-06-05",
             "data_checkout": "2023-06-10",
@@ -52,7 +52,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "c45de10e-67ff-4372-d789-3g04b2c3d482",
+            "codigo": "f4d4f050-80de-4b3a-b712-3393f4f7c451",
             "anuncio": 5,
             "data_checkin": "2023-06-08",
             "data_checkout": "2023-07-10",
