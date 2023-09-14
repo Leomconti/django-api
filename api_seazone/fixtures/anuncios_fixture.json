@@ -1,0 +1,10 @@
+[
+    {
+        "model": "anuncios.anuncio",
+        "pk": 1,
+        "fields": {
+            "title": "Sample Anuncio 1",
+            "description": "Description for Sample Anuncio 1"
+        }
+    }
+]

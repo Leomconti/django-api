@@ -1,0 +1,10 @@
+[
+    {
+        "model": "reservas.reserva",
+        "pk": 1,
+        "fields": {
+            "name": "Sample Reserva 1",
+            "date": "2023-09-15"
+        }
+    }
+]

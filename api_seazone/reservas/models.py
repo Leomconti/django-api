@@ -1,8 +1,8 @@
 import uuid
 
-from django.db import models
-
 from anuncios.models import Anuncio
+from django.db import models
+from rest_framework import serializers
 
 
 class Reserva(models.Model):
@@ -15,4 +15,10 @@ class Reserva(models.Model):
     numero_hospedes = models.PositiveIntegerField()
     data_criacao = models.DateTimeField(auto_now_add=True)
     data_atualizacao = models.DateTimeField(auto_now=True)
-    
+
+
+
+class ReservaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Reserva
+        fields = '__all__'

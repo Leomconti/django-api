@@ -1,4 +1,5 @@
 from django.db import models
+from rest_framework import serializers
 
 
 class Imovel(models.Model):
@@ -10,3 +11,9 @@ class Imovel(models.Model):
     data_ativacao = models.DateField()
     data_criacao = models.DateTimeField(auto_now_add=True)  # added when the object is created
     data_atualizacao = models.DateTimeField(auto_now=True)  # add when the object is updated
+
+class ImovelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Imovel
+        fields = '__all__'
+        
