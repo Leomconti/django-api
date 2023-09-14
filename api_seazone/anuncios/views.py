@@ -18,7 +18,7 @@ def get_list(request):
     serializer = AnuncioSerializer(anuncios, many=True)
     return Response(serializer.data)  # 200 ok
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 def delete(request, pk):
     try:
         anuncio = Anuncio.objects.get(pk=pk)

@@ -1,10 +1,62 @@
 [
     {
-        "model": "imoveis.imoveis",
+        "model": "imoveis.imovel",
         "pk": 1,
         "fields": {
-            "title": "Sample Anuncio 1",
-            "description": "Description for Sample Anuncio 1"
+            "limite_hospedes": 5,
+            "quantidade_banheiros": 2,
+            "aceita_animais_estimacao": true,
+            "valor_limpeza": 50.0,
+            "data_ativacao": "2023-09-14",
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "imoveis.imovel",
+        "pk": 2,
+        "fields": {
+            "limite_hospedes": 4,
+            "quantidade_banheiros": 1,
+            "aceita_animais_estimacao": false,
+            "valor_limpeza": 30.0,
+            "data_ativacao": "2023-08-10",
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "imoveis.imovel",
+        "pk": 3,
+        "fields": {
+            "limite_hospedes": 6,
+            "quantidade_banheiros": 3,
+            "aceita_animais_estimacao": true,
+            "valor_limpeza": 70.0,
+            "data_ativacao": "2023-07-05",
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "imoveis.imovel",
+        "pk": 4,
+        "fields": {
+            "limite_hospedes": 3,
+            "quantidade_banheiros": 1,
+            "aceita_animais_estimacao": false,
+            "valor_limpeza": 25.0,
+            "data_ativacao": "2023-06-01",
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "imoveis.imovel",
+        "pk": 5,
+        "fields": {
+            "limite_hospedes": 4,
+            "quantidade_banheiros": 7,
+            "aceita_animais_estimacao": false,
+            "valor_limpeza": 200.0,
+            "data_ativacao": "2023-06-12",
+            "data_criacao": "2023-09-14T10:00:00Z"
         }
     }
 ]

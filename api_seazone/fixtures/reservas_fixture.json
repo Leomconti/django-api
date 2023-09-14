@@ -1,10 +1,65 @@
 [
     {
         "model": "reservas.reserva",
-        "pk": 1,
         "fields": {
-            "name": "Sample Reserva 1",
-            "date": "2023-09-15"
+            "codigo": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "anuncio": 1,
+            "data_checkin": "2023-09-20",
+            "data_checkout": "2023-09-25",
+            "preco_total": 500.0,
+            "numero_hospedes": 4,
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "a23bc10c-45dd-4372-b567-1e02b2c3d480",
+            "anuncio": 2,
+            "data_checkin": "2023-08-15",
+            "data_checkout": "2023-08-20",
+            "preco_total": 400.0,
+            "comentario": "Coube a familia toda!",
+            "numero_hospedes": 9,
+            "data_criacao": "2023-08-10T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "b34cd10d-56ee-4372-c678-2f03b2c3d481",
+            "anuncio": 3,
+            "data_checkin": "2023-07-10",
+            "data_checkout": "2023-07-15",
+            "preco_total": 550.0,
+            "comentario": "Vista bonita",
+            "numero_hospedes": 5,
+            "data_criacao": "2023-07-05T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "c45de10e-67ff-4372-d789-3g04b2c3d482",
+            "anuncio": 4,
+            "data_checkin": "2023-06-05",
+            "data_checkout": "2023-06-10",
+            "preco_total": 350.0,
+            "numero_hospedes": 2,
+            "data_criacao": "2023-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "c45de10e-67ff-4372-d789-3g04b2c3d482",
+            "anuncio": 5,
+            "data_checkin": "2023-06-08",
+            "data_checkout": "2023-07-10",
+            "preco_total": 950.0,
+            "comentario": "Legal!",
+            "numero_hospedes": 2,
+            "data_criacao": "2023-06-01T10:00:00Z"
         }
     }
 ]

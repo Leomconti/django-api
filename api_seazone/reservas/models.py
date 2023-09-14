@@ -14,7 +14,7 @@ class Reserva(models.Model):
     comentario = models.TextField(blank=True, null=True)
     numero_hospedes = models.PositiveIntegerField()
     data_criacao = models.DateTimeField(auto_now_add=True)
-    data_atualizacao = models.DateTimeField(auto_now=True)
+    data_atualizacao = models.DateTimeField(auto_now=True, null=True)
 
 
 

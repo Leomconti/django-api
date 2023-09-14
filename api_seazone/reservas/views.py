@@ -18,7 +18,7 @@ def get_list(request):
     serializer = ReservaSerializer(reservas, many=True)
     return Response(serializer.data)  # 200 ok
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 def delete(request, pk):
     try:
         reserva = Reserva.objects.get(pk=pk)

@@ -18,7 +18,7 @@ def get_list(request):
     serializer = ImovelSerializer(imoveis, many=True)
     return Response(serializer.data)  # 200 ok
 
-@api_view(['POST'])
+@api_view(['GET','POST'])
 def delete(request, pk):
     try:
         imovel = Imovel.objects.get(pk=pk)
@@ -27,7 +27,7 @@ def delete(request, pk):
     imovel.delete()
     return Response(status=404)  # 404 no content
 
-@api_view(['PATCH'])
+@api_view(['GET','PATCH'])
 def patch(request, pk):
     try:
         imovel = Imovel.objects.get(pk=pk)

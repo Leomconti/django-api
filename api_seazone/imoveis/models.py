@@ -10,7 +10,7 @@ class Imovel(models.Model):
     valor_limpeza = models.DecimalField(max_digits=6, decimal_places=2)
     data_ativacao = models.DateField()
     data_criacao = models.DateTimeField(auto_now_add=True)  # added when the object is created
-    data_atualizacao = models.DateTimeField(auto_now=True)  # add when the object is updated
+    data_atualizacao = models.DateTimeField(auto_now=True, null=True)  # add when the object is updated
 
 class ImovelSerializer(serializers.ModelSerializer):
     class Meta:

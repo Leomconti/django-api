@@ -3,8 +3,51 @@
         "model": "anuncios.anuncio",
         "pk": 1,
         "fields": {
-            "title": "Sample Anuncio 1",
-            "description": "Description for Sample Anuncio 1"
+            "imovel": 1,
+            "nome_plataforma": "PlatformaA",
+            "taxa_plataforma": 100.0,
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "anuncios.anuncio",
+        "pk": 2,
+        "fields": {
+            "imovel": 2,
+            "nome_plataforma": "PlatformaB",
+            "taxa_plataforma": 200.0,
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "anuncios.anuncio",
+        "pk": 3,
+        "fields": {
+            "imovel": 3,
+            "nome_plataforma": "PlatformaC",
+            "taxa_plataforma": 300.0,
+            "data_criacao": "2023-09-14T10:00:00Z"
+
+        }
+    },
+    {
+        "model": "anuncios.anuncio",
+        "pk": 4,
+        "fields": {
+            "imovel": 4,
+            "nome_plataforma": "PlatformaD",
+            "taxa_plataforma": 400.0,
+            "data_criacao": "2023-09-14T10:00:00Z"
+        }
+    },
+    {
+        "model": "anuncios.anuncio",
+        "pk": 5,
+        "fields": {
+            "imovel": 5,
+            "nome_plataforma": "PlatformaE",
+            "taxa_plataforma": 500.0,
+            "data_criacao": "2023-09-14T10:00:00Z"
         }
     }
 ]
