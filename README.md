@@ -35,6 +35,12 @@ python manage.py loaddata fixtures/anuncios_fixture.json
 python manage.py loaddata fixtures/reservas_fixture.json
 ```
 
+5. To run the unit tests I created, to check if everything is set up correctly, just run:
+
+```
+python manage.py test
+```
+
 <br>
 <br>
 <br>
