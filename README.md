@@ -23,7 +23,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-This will start the server in your browser, check
+This will start the server in your browser, check the console for the port it started on, usually is 8000 if available
 
 4. To test out the api, we're using **fixtures**, they are already included in the repository, in /api_seazone/fixtures, but you can make your own if you want to. In the fixture, all fields need to be in the json, including those wit auto_now_add set to True
 
