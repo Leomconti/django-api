@@ -1,4 +1,5 @@
 from anuncios.models import Anuncio, AnuncioSerializer
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -8,7 +9,7 @@ def get(request, pk):
     try:
         anuncio = Anuncio.objects.get(pk=pk)
     except Anuncio.DoesNotExist:
-        return Response(status=404)
+        return Response(status=status.HTTP_404_NOT_FOUND)
     serializer = AnuncioSerializer(anuncio)
     return Response(serializer.data)  # 200 ok
 
@@ -23,6 +24,6 @@ def delete(request, pk):
     try:
         anuncio = Anuncio.objects.get(pk=pk)
     except Anuncio.DoesNotExist:
-        return Response(status=404)  # 404 not found
+        return Response(status=status.HTTP_404_NOT_FOUND)  # 404 not found
     anuncio.delete()
-    return Response(status=204)  # 204 no content
+    return Response(status=status.HTTP_204_NO_CONTENT)  # 204 no content

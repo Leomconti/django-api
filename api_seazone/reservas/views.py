@@ -1,4 +1,5 @@
 from reservas.models import Reserva, ReservaSerializer
+from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -8,7 +9,7 @@ def get(request, pk):
     try:
         reserva = Reserva.objects.get(pk=pk)
     except Reserva.DoesNotExist:
-        return Response(status=404)
+        return Response(status=status.HTTP_404_NOT_FOUND)
     serializer = ReservaSerializer(reserva)
     return Response(serializer.data)  # 200 ok
 
@@ -23,6 +24,6 @@ def delete(request, pk):
     try:
         reserva = Reserva.objects.get(pk=pk)
     except Reserva.DoesNotExist:
-        return Response(status=404)  # 404 not found
+        return Response(status=status.HTTP_404_NOT_FOUND)  # 404 not found
     reserva.delete()
-    return Response(status=204)  # 204 no content
+    return Response(status=status.HTTP_204_NO_CONTENT)  # 204 no content
