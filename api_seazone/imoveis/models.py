@@ -5,7 +5,7 @@ from rest_framework import serializers
 class Imovel(models.Model):
     codigo = models.PositiveIntegerField(primary_key=True, unique=True)
     limite_hospedes = models.PositiveIntegerField()  # more then 1000 is not necessary (I think?)
-    quantidade_banheiros = models.PositiveIntegerField(2)
+    quantidade_banheiros = models.PositiveIntegerField()
     aceita_animais_estimacao = models.BooleanField(default=False)
     valor_limpeza = models.DecimalField(max_digits=6, decimal_places=2)
     data_ativacao = models.DateField()
