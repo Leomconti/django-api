@@ -49,7 +49,9 @@ python manage.py test
 
 # Documentation
 
-## For better modularization, control and maintenance, each API is contained on its on app in django
+-   For better modularization, control and maintenance, each API is contained on its on app in django
+
+-   To test it out, just start the server and when you search for the endpoint, you can use django rest frameworks interface to interact with it
 
 ## Following is the documentation and explanation for each endpoint
 
@@ -57,6 +59,7 @@ python manage.py test
 
 URL: /anuncios/
 
+-   POST /anuncios/: Create a new anuncio.
 -   GET /anuncios/: Retrieve a list of all anuncios.
 -   GET /anuncios/`<int:pk>`/: Retrieve details of a specific anuncio by its primary key.
 -   PUT/PATCH /anuncios/`<int:pk>`/: Update a specific anuncio by its primary key.
@@ -66,6 +69,7 @@ URL: /anuncios/
 
 URL: /imoveis/
 
+-   POST /imoveis/: Create a new imovel.
 -   GET /imoveis/: Retrieve a list of all imoveis.
 -   GET /imoveis/`<int:pk>`/: Retrieve details of a specific imovel by its primary key.
 -   DELETE /imoveis/`<int:pk>`/: Delete a specific imovel by its primary key.
@@ -74,6 +78,7 @@ URL: /imoveis/
 
 URL: /reservas/
 
+-   POST /reservas/: Create a new reserva.
 -   GET /reservas/: Retrieve a list of all reservas.
 -   GET /reservas/`<int:pk>`/: Retrieve details of a specific reserva by its primary key.
 -   DELETE /reservas/`<int:pk>`/: Delete a specific reserva by its primary key.
