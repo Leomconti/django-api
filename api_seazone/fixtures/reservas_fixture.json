@@ -2,7 +2,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "codigo": "230914100000",
             "anuncio": 1,
             "data_checkin": "2023-09-20",
             "data_checkout": "2023-09-25",
@@ -14,7 +14,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "a23bc10c-45dd-4372-b567-1e02b2c3d480",
+            "codigo": "230914100001",
             "anuncio": 2,
             "data_checkin": "2023-08-15",
             "data_checkout": "2023-08-20",
@@ -27,7 +27,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "b34cd10d-56ee-4372-c678-2f03b2c3d481",
+            "codigo": "230914100002",
             "anuncio": 3,
             "data_checkin": "2023-07-10",
             "data_checkout": "2023-07-15",
@@ -40,7 +40,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "c45de10e-67ff-4372-d789-3f04b2c3d482",
+            "codigo": "230914100003",
             "anuncio": 4,
             "data_checkin": "2023-06-05",
             "data_checkout": "2023-06-10",
@@ -52,7 +52,7 @@
     {
         "model": "reservas.reserva",
         "fields": {
-            "codigo": "f4d4f050-80de-4b3a-b712-3393f4f7c451",
+            "codigo": "230914100004",
             "anuncio": 5,
             "data_checkin": "2023-06-08",
             "data_checkout": "2023-07-10",
