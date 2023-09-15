@@ -30,3 +30,11 @@ class ReservaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reserva
         fields = '__all__'
+        
+    def validate(self, data):
+        """
+        Validation to check that data_checkin is before data_checkout.
+        """
+        if data['data_checkin'] > data['data_checkout']:
+            raise serializers.ValidationError("A data de check-in deve ser posterior à data de check-out;")
+        return data
