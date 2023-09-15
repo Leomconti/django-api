@@ -14,6 +14,16 @@ class AnuncioAPITests(APITestCase):
         self.url_get_list = reverse('anuncio-list')
         self.url_delete = reverse('anuncio-delete', args=[self.anuncio.pk])
 
+    def test_create_anuncio(self):
+        url_create = reverse('anuncio-create')
+        data = {
+            "imovel": 1,
+            "nome_plataforma": "Platform-Test",
+            "taxa_plataforma": 20.0
+        }
+        response = self.client.post(url_create, data)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        
     def test_get_anuncio(self):
         response = self.client.get(self.url_get)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -31,6 +41,16 @@ class AnuncioAPITests(APITestCase):
         self.assertFalse(Anuncio.objects.filter(pk=self.anuncio.pk).exists())
 
     # Invalid ones, not found etc
+    
+    def test_create_anuncio_invalid_values(self):
+        url_create = reverse('anuncio-create')
+        data = {
+            "imovel": 9999,
+            "nome_plataforma": "",
+            "taxa_plataforma": "not-a-float"
+        }
+        response = self.client.post(url_create, data)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
     
     def test_get_anuncio_not_found(self):
         url = reverse('anuncio-detail', args=[9999])  # Assuming 9999 is an ID that doesn't exist
