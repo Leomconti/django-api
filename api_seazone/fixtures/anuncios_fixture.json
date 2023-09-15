@@ -29,25 +29,5 @@
             "data_criacao": "2023-09-14T10:00:00Z"
 
         }
-    },
-    {
-        "model": "anuncios.anuncio",
-        "pk": 4,
-        "fields": {
-            "imovel": 4,
-            "nome_plataforma": "PlatformaD",
-            "taxa_plataforma": 400.0,
-            "data_criacao": "2023-09-14T10:00:00Z"
-        }
-    },
-    {
-        "model": "anuncios.anuncio",
-        "pk": 5,
-        "fields": {
-            "imovel": 5,
-            "nome_plataforma": "PlatformaE",
-            "taxa_plataforma": 500.0,
-            "data_criacao": "2023-09-14T10:00:00Z"
-        }
     }
 ]

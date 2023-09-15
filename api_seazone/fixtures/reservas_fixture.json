@@ -41,7 +41,7 @@
         "model": "reservas.reserva",
         "fields": {
             "codigo": "230914100003",
-            "anuncio": 4,
+            "anuncio": 1,
             "data_checkin": "2023-06-05",
             "data_checkout": "2023-06-10",
             "preco_total": 350.0,
@@ -53,13 +53,51 @@
         "model": "reservas.reserva",
         "fields": {
             "codigo": "230914100004",
-            "anuncio": 5,
+            "anuncio": 2,
             "data_checkin": "2023-06-08",
             "data_checkout": "2023-07-10",
             "preco_total": 950.0,
             "comentario": "Legal!",
             "numero_hospedes": 2,
             "data_criacao": "2023-06-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "230914100005",
+            "anuncio": 3,
+            "data_checkin": "2023-05-05",
+            "data_checkout": "2023-05-10",
+            "preco_total": 300.0,
+            "numero_hospedes": 3,
+            "data_criacao": "2023-05-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "230914100006",
+            "anuncio": 1,
+            "data_checkin": "2023-04-15",
+            "data_checkout": "2023-04-20",
+            "preco_total": 450.0,
+            "comentario": "Aconchegante!",
+            "numero_hospedes": 4,
+            "data_criacao": "2023-04-10T10:00:00Z"
+        }
+    },
+    {
+        "model": "reservas.reserva",
+        "fields": {
+            "codigo": "230914100007",
+            "anuncio": 2,
+            "data_checkin": "2023-03-20",
+            "data_checkout": "2023-03-25",
+            "preco_total": 600.0,
+            "comentario": "Adorei a estadia!",
+            "numero_hospedes": 6,
+            "data_criacao": "2023-03-15T10:00:00Z"
         }
     }
 ]
